@@ -31,12 +31,12 @@ O objetivo é comparar as **vendas anuais por categoria** da loja que mais vende
 
 A primeira consulta identifica a loja que mais vendeu produtos (em quantidade):
 
-![Consulta 1](image.png)
+![Consulta 1](consulta1.png)
 
 **Resultado obtido:**  
 Loja com o maior volume de vendas em quantidade.
 
-![Resultado Consulta 1](image-1.png)
+![Resultado Consulta 1](consulta1result.png)
 
 ---
 
@@ -44,11 +44,11 @@ Loja com o maior volume de vendas em quantidade.
 
 Em seguida, a consulta foi armazenada dentro de uma **CTE** (Common Table Expression) para permitir uma análise detalhada por categoria e ano.
 
-![Consulta 2](image-2.png)
+![Consulta 2](consulta2.png)
 
 **Resultado da Consulta 2:**
 
-![Resultado Consulta 2](image-3.png)
+![Resultado Consulta 2](consulta2result.png)
 
 ---
 
