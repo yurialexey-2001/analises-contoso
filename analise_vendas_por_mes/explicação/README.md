@@ -1,16 +1,27 @@
 # Análise Comparativa de Vendas Mensais (Ano a Ano)
 
+## Introdução
+
+Este projeto tem como objetivo analisar o desempenho anual de vendas da empresa **Contoso**, utilizando dados do banco de dados Contoso fornecido pela Microsoft. A análise envolve extração de dados via SQL, tratamento e visualização em Python, e interpretação dos resultados para buscar possíveis causas de variações no faturamento.
+
+Nos próximos tópicos, detalho as consultas SQL, resultados obtidos, processamento em Python e conclusões.
+
 ## 📚 Sumário
 
-* [Introdução](#análise-comparativa-de-vendas-mensais-ano-a-ano)
-* [Consulta SQL](#-consulta-sql-utilizada)
+* [Introdução](#introducao)
+* [Consulta do faturamento](#-consulta-sql-utilizada)
 * [Resultado da Consulta](#-resultado-da-consulta)
 * [Análise em Python](#-análise-em-python)
-* [Separação dos Dados](#separação-dos-dados-por-ano)
-* [Configurações da Visualização](#configurações-da-visualização)
-* [Código do Gráfico](#código-para-geraçao-do-gráfico)
-* [Gráfico Final](#-gráfico-gerado)
-* [Conclusão](#-conclusão)
+* [Separação dos Dados](#separacao-dos-dados-por-ano)
+* [Configurações da Visualização](#configuracoes-da-visualizacao)
+* [Código do Gráfico](#codigo-para-geracao-do-grafico)
+* [Gráfico Final](#-grafico-gerado)
+* [Consulta de Variação Year over Year](#-variação-percentual-no-faturamento)
+* [Variação YoY](#variação-percentual-no-faturamento)
+* [Query Lojas Fechadas](#-descobrindo-possíveis-motivos-da-alteração-no-faturamento)
+* [Lojas Fechadas](#descobrindo-possíveis-motivos-da-alteração-no-faturamento)
+* [Faturamento das Lojas Fechadas](#observando-faturamento-individual-das-lojas)
+* [Conclusão](#-conclusao)
 
 # Análise Comparativa de Vendas Mensais (Ano a Ano)
 
@@ -19,7 +30,7 @@ Este repositório apresenta uma análise de vendas mensais da empresa **Contoso*
 ## 📊 Consulta SQL Utilizada
 
 A consulta SQL abaixo foi utilizada para obter os dados iniciais:
-![Consulta SQL](image.png)
+![Consulta do faturamento](image.png)
 
 ## 📈 Resultado da Consulta
 
@@ -49,7 +60,36 @@ O gráfico final foi gerado com o seguinte código:
 ## 📉 Gráfico Gerado
 
 Aqui está o gráfico resultante da análise:
-![Gráfico](grafico.png)
+![Gráfico Final](grafico.png)
+
+## 💹Variação percentual no faturamento
+
+Usei a seguinte query para descobrir a variação percentual ano a ano:
+![Consulta de Variação Year over Year](image-6.png)
+
+E com isso obtivo o seguinte resultado:
+Diminuição de -9,83% em 2008(em relação a 2007) e de -9,06% em 2009(em relação a 2009)
+![Variação YoY](image-10.png)
+
+## 💸Descobrindo possíveis motivos da alteração no faturamento
+
+Para descobrir um possível motivo da alteração no faturamento da companhia, busquei primeiramente por possíveis lojas que não estavam mais na ativa nos anos em questão. Para isso, usei a query:
+![Query Lojas Fechadas](image-9.png)
+
+E o resultado foi esse:
+2 Lojas fechadas em 2008, e 10 Lojas fechadas em 2009
+![Lojas Fechadas](image-8.png)
+
+## Observando faturamento individual das lojas
+
+Para analisar o faturamento individual de cada loja e ver as variações no seu faturamento, foi utilizado o seguinte código:
+![Faturamento das Lojas Fechadas](image-11.png)
+
+
+## ✔️Conclusão
+
+A companhia CONTOSO teve seu faturamento reduzido em mais de 18% de 2007 para 2009 devido ao fechamento de 12 lojas ao decorrer de 2008 e 2009.
+O fechamento dessas lojas ocorreu devido a queda em seu faturamento, algumas delas sofrendo com queda de mais de 50% de seu faturamento.
 
 ## 🛠️ Tecnologias e Bibliotecas Utilizadas
 
@@ -63,10 +103,9 @@ Aqui está o gráfico resultante da análise:
 
 * **Pandas** — manipulação e organização dos dados
 * **Matplotlib** — criação do gráfico final
+* **Numpy** - separação dos meses
 * **Jupyter / Ambiente de análise** — execução do código e visualização
 
-## 📝 Conclusão
 
-A análise demonstra que a empresa **Contoso** vem apresentando uma queda significativa no faturamento ao longo dos anos. A situação mostra piora especialmente entre **2007 e 2009**, indicando tendência negativa no desempenho de vendas.
 
-Essa visualização é fundamental para identificar padrões, problemas e auxiliar na tomada de decisões estratégicas.
+
