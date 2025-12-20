@@ -7,11 +7,11 @@ Este repositório reúne minhas análises de dados realizadas com o banco de dad
 As análises estão organizadas em pastas separadas, de acordo com o tipo de abordagem utilizada.
 Em cada pasta você encontrará:
 
- - O passo a passo da análise
+ - O passo a passo da análise;
 
- - Os resultados obtidos
+ - Os resultados obtidos;
 
- - Explicações e insights relevantes
+ - Explicações e insights relevantes;
 
 Essa estrutura foi pensada para facilitar a navegação e possibilitar que qualquer pessoa acompanhe o raciocínio por trás de cada projeto.
 
