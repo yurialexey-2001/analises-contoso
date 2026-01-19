@@ -54,10 +54,14 @@ Esse passo é **Muito importante** para que não haja erros no Dashboard.
 
 Para que alguns dados fossem organizados de maneira eficiente, algumas métricas foram criadas com DAX:
 
-![Total Custo](image-6.png) ![Total Vendas](image-7.png)
-![Lucro](image-8.png)       ![Margem de Lucro](image-9.png)
-![Qtd Vendida](image-10.png)![Ranking Loja](image-11.png)
-![Ranking País](image-12.png)![Ranking Produto](image-13.png)
+![Total Custo](image-6.png) 
+![Total Vendas](image-7.png)
+![Lucro](image-8.png)       
+![Margem de Lucro](image-9.png)
+![Qtd Vendida](image-10.png)
+![Ranking Loja](image-11.png)
+![Ranking País](image-12.png)
+![Ranking Produto](image-13.png)
 
 Todas as métricas foram criadas com o objetivo de inserir visuais onde cálculos eram necessários. As métricas de Ranking foram criadas para que apenas os "top 10" de cada produto, país e loja fossem utilizados, tendo em vista o tamanho do banco de dados.
 
@@ -81,4 +85,4 @@ O Dashboard pronto ficou assim:
 Outros insights podem ser obtidos através de análises no Dashboard interativo.
 Abaixo, uma demonstração da interação com o dashboard
 
-![Interação com dashboard](gif_dashboard.gif)
+![Interação com Dashboard](gif_dashboard-1.gif)
